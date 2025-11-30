@@ -20,7 +20,7 @@ Personal configuration files for macOS development environment.
 - Lua-based configuration
 - LSP support with Mason
 - Git integration (gitsigns)
-- AI completion (CodeCompanion)
+- AI (CodeCompanion)
 - File navigation (Telescope, Oil)
 
 ### Zsh
@@ -30,6 +30,7 @@ Personal configuration files for macOS development environment.
 
 ## Dependencies
 
-- Oh My Zsh
-- Neovim
-- AeroSpace
+- [Oh My Zsh](https://ohmyz.sh/)
+- [Neovim](https://neovim.io/)
+- [AeroSpace](https://github.com/nikitabobko/AeroSpace)
+- [Tmux](https://github.com/tmux/tmux)

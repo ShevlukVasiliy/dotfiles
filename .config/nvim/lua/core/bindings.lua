@@ -48,4 +48,12 @@ vim.keymap.set('n', '<leader>cn', ':cn<CR>')
 vim.keymap.set('n', '<leader>cp', ':cp<CR>')
 vim.keymap.set('n', '<leader>cc', ':cclose<CR>')
 vim.keymap.set('n', '<leader>cf', ':caddfile %<CR>')
+
 vim.keymap.set('n', '<leader>oc', ':terminal opencode<CR>')
+
+function OpenTerminal(name)
+	vim.cmd[[:vsplit]]
+	vim.cmd[[:terminal]]
+end
+
+vim.keymap.set('n', '<leader>ot', OpenTerminal)
