@@ -1,8 +1,7 @@
 -- oil keymaps
-require('oil').setup({
+require("oil").setup({
 	delete_to_trash = true,
 	view_options = {
-		show_hidden = true
-	}
+		show_hidden = true,
+	},
 })
-vim.keymap.set('n', '<leader>e', ':Oil<CR>')

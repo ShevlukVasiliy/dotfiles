@@ -3,19 +3,19 @@ require("codecompanion").setup({
 		chat = {
 			adapter = {
 				name = "ollama",
-				model = "qwen2.5-coder:7b",
+				model = "llama3.1:latest",
 			},
 		},
 		inline = {
 			adapter = {
 				name = "ollama",
-				model = "qwen2.5-coder:7b",
+				model = "llama3.1:latest",
 			},
 		},
 		cmd = {
 			adapter = {
 				name = "ollama",
-				model = "qwen2.5-coder:7b",
+				model = "llama3.1:latest",
 			},
 		}
 	},

@@ -1,8 +1,8 @@
 vim.pack.add({
+	-- {src = "https://github.com/neoclide/coc.nvim"},
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-	-- { src = "https://github.com/neoclide/coc.nvim" },
 	{ src = "https://github.com/numToStr/Comment.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/windwp/nvim-autopairs" },
@@ -17,7 +17,6 @@ vim.pack.add({
 	{ src = "https://github.com/David-Kunz/gen.nvim" },
 	{ src = "https://github.com/tpope/vim-fugitive" },
 	{ src = "https://github.com/catppuccin/nvim" },
-	-- { src = "https://github.com/CopilotC-Nvim/CopilotChat.nvim" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
@@ -25,5 +24,10 @@ vim.pack.add({
 	{ src = "https://github.com/folke/tokyonight.nvim" },
 	{ src = "https://github.com/olimorris/codecompanion.nvim" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
+	{ src = "https://github.com/folke/noice.nvim" },
+	{ src = "https://github.com/MunifTanjim/nui.nvim" },
+	{ src = "https://github.com/rcarriga/nvim-notify" },
+	{ src = "https://github.com/stevearc/conform.nvim" },
+	{ src = "https://github.com/folke/snacks.nvim" },
+	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
 })
-

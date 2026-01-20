@@ -12,9 +12,3 @@ require("codeium").setup({
 	},
 })
 
-local cmp = require('cmp')
-cmp.setup({
-	sources = {
-		{ name = 'codeium', group_index = 1, priority = 100 },
-	},
-})

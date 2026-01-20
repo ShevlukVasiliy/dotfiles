@@ -30,17 +30,6 @@ setopt hist_verify
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 export NVIM_RUNTIMEPATH="$HOME/.config/nvim"
-export ANDROID_HOME=/Volumes/UNTITLED/Android/sdk
-export ANDROID_SDK_ROOT=/Volumes/UNTITLED/Android/sdk
-export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
 export RUST_HOME=$HOME/.cargo/bin
 export PATH=$PATH:$RUST_HOME
@@ -66,17 +55,29 @@ alias rmrf="to_trash"
 alias glg="git log --oneline --graph --decorate --all"
 
 
+source ~/.creds.sh
+
+alias da="aider --model openrouter/mistralai/devstral-2512:free --no-auto-commit --vim"
+alias la="aider --model openrouter/meta-llama/llama-3.1-405b-instruct:free --no-auto-commit --vim"
+alias gma="aider --model openrouter/google/gemma-3-27b-it:free --no-auto-commit --vim"
+alias deepa="aider --model openrouter/tngtech/deepseek-r1t2-chimera:free --no-auto-commit --vim"
+alias deepdeepa="aider --model openrouter/deepseek/deepseek-v3.2 --no-auto-commit --vim"
+
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
 
-# The next line updates PATH for CLI.
-if [ -f '/Users/vasiliy/yandex-cloud/path.bash.inc' ]; then source '/Users/vasiliy/yandex-cloud/path.bash.inc'; fi
-
-# The next line enables shell command completion for yc.
-if [ -f '/Users/vasiliy/yandex-cloud/completion.zsh.inc' ]; then source '/Users/vasiliy/yandex-cloud/completion.zsh.inc'; fi
+# # The next line updates PATH for CLI.
+# if [ -f '/Users/vasiliy/yandex-cloud/path.bash.inc' ]; then source '/Users/vasiliy/yandex-cloud/path.bash.inc'; fi
+#
+# # The next line enables shell command completion for yc.
+# if [ -f '/Users/vasiliy/yandex-cloud/completion.zsh.inc' ]; then source '/Users/vasiliy/yandex-cloud/completion.zsh.inc'; fi
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/vasiliy/.lmstudio/bin"
 # End of LM Studio CLI section
 
+source /Users/vasiliy/yandex-cloud/completion.zsh.inc
+
+# opencode
+export PATH=/Users/vasiliy/.opencode/bin:$PATH

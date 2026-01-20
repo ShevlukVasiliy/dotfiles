@@ -1,4 +1,5 @@
 require('core.opts')
 require('core.bindings')
+require('core.lsp')
 require('core.plugins')
 require('plugins.main')
