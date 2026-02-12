@@ -57,9 +57,6 @@ alias glg="git log --oneline --graph --decorate --all"
 
 source ~/.creds.sh
 
-alias da="aider --model openrouter/mistralai/devstral-2512:free --no-auto-commit --vim"
-alias la="aider --model openrouter/meta-llama/llama-3.1-405b-instruct:free --no-auto-commit --vim"
-alias gma="aider --model openrouter/google/gemma-3-27b-it:free --no-auto-commit --vim"
 alias deepa="aider --model openrouter/tngtech/deepseek-r1t2-chimera:free --no-auto-commit --vim"
 alias deepdeepa="aider --model openrouter/deepseek/deepseek-v3.2 --no-auto-commit --vim"
 
